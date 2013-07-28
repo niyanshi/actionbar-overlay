@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.niyanshi.android" android:versionCode="1" android:versionName="1.0-SNAPSHOT">
+          package="com.niyanshi.android.actionbaroverlay"
+          android:versionCode="1"
+          android:versionName="1.0-SNAPSHOT">
 
-  <application android:icon="@drawable/icon" android:label="@string/app_name">
-    <activity android:name=".HelloAndroidActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-  </application>
+    <uses-sdk
+            android:maxSdkVersion="17"
+            android:minSdkVersion="8"></uses-sdk>
+    <application
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:theme="@style/App.Theme">
+        <activity android:name="com.niyanshi.android.HelloAndroidActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
 
